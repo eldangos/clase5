@@ -6,3 +6,4 @@ class Noticia(models.Model):
     detalle=models.TextField()
     def __str__(self):
         return self.titulo
+    

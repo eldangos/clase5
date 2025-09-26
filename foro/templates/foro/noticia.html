@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block bgr %}
+{% static 'core/assets/img/post-bg.jpg' %}
+{% endblock %}
+{% block content %}
+  <div class="container px-4 px-lg-5">
+    <h1> Noticias</h1>
+    <hr>
+    {% for n in noticia %}
+    <p>
+        {{n.titulo}}
+    </p>
+    <p>
+        {{n.detalle}}
+    </p>
+    <hr>
+    {% endfor %}
+    
+        </div>
+{% endblock %}
+
